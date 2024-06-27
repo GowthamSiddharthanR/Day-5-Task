@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ const resume = {
+  personalInformation: {
+    firstName: "Gowtham Siddharthan",
+    lastName: "Rasu",
+    email: "gowthamsiddharthan88@gmail.com",
+    address: "01, main road, Kariyamanickam,pondicherry",
+  },
+  objective:
+    "To associate with an organization which progresses dynamically and gives me a chance to update my knowledge and enhance my skills, to serve the firm to the best of my efforts and to have self- satisfaction on my work.",
+  education: [
+    {
+      degree: "Bachelor of Technology",
+      institution: "Manakula Vinayagar Institute of Technology, Puducherry",
+      graduation: "2018",
+    },
+    {
+      degree : "HSC",
+      institution: "Holy Flowers Higher Secondary School",
+      graduation: "2014",
+    }
+    
+  ],
+  workExperience: [
+    {
+      position: "Developer",
+      company: "TCS",
+    },
+    {
+      position: "IT Administrator",
+      company: "simsona technologies",
+    },
+  ],
+  certification : [
+    {
+      title: " core java",
+      authorizedBy: "Chakrika Info Solutions, Puducherry",
+
+    },
+    {
+      title: "Block Worrier robotics",
+      authorizedBy: "IIT Bombay in Mumbai",
+    },
+
+  ],
+};
+console.log("Output using 'for of' loop");
+for (let edu of resume.education) {
+  console.log("degree is " + edu.degree);
+  console.log("institution is " +edu.institution);
+  console.log("graduation is " +edu.graduation);
+}
+console.log("******************************************************************");
+for (let pos of resume.workExperience) {
+  console.log("position is "+ pos.position);
+  console.log("company is "+ pos.company);
+}
+console.log("******************************************************************");
+for (let certify of resume.certification) {
+  console.log("Title is "+certify.title);
+  console.log("AuthorisedBy "+ certify.authorizedBy);
+}
+console.log("******************************************************************");
+
+ </script>
+</body>
+</html>
